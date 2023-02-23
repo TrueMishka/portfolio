@@ -6,7 +6,14 @@ export const About = () => {
     return (
         <div className={classes.wrapper}>
             <div className={classes.container}>
-                <div className={classes.title}> Know Me More</div>
+                <div className={classes.titleContainer}>
+                    <h2>ABOUT ME</h2>
+                    <p>
+                        Know Me More
+                        <span></span>
+                    </p>
+
+                </div>
                 <div className={classes.content}>
                     <div className={classes.information}>
                         <h2>I'm <span className={commonStyle.textDecoration}>Misha Pashuto</span>, a front-end developer

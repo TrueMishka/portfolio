@@ -9,6 +9,13 @@
     padding-left: 260px;
 }
 
+@media (max-width: 1000px) {
+    .wrapper {
+        transition: padding-left 1s;
+        padding-left: 0;
+    }
+}
+
 .container {
     margin-right: auto;
     margin-left: auto;
