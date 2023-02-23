@@ -1,0 +1,41 @@
+.wrapper {
+    position: relative;
+    min-height: 100vh;
+    background-color: #4c4d4d;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 260px;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.textTop {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 35px;
+}
+
+.textMiddle {
+    margin: 0;
+    font-size: 60px;
+}
+
+.textBottom {
+    margin: 0;
+    font-size: 21px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
