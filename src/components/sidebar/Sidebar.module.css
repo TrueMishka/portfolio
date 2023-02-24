@@ -83,7 +83,11 @@
 }
 
 .navContainer li {
+    cursor: pointer;
     padding: 10px;
+}
+.navContainer li:hover {
+    color: #20c997;
 }
 
 .active {

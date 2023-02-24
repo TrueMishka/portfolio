@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from "./Sidebar.module.css";
+import {Link} from "react-scroll";
 
 export const Sidebar = () => {
     return (
@@ -11,9 +12,9 @@ export const Sidebar = () => {
                 </div>
                 <div className={classes.navContainer}>
                     <ul>
-                        <li className={classes.active}>Home</li>
-                        <li>About me</li>
-                        <li>What I Do</li>
+                        <li><Link activeClass={classes.active} to={'Home'} spy={true} smooth={true}>Home</Link></li>
+                        <li><Link activeClass={classes.active} to={'AboutMe'} spy={true} smooth={true}>About Me</Link></li>
+                        <li><Link activeClass={classes.active} to={'Skills'} spy={true} smooth={true}>What I Know</Link></li>
                         <li>Resume</li>
                         <li>Portfolio</li>
                         <li>Contact</li>
