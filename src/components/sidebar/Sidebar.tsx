@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from "./Sidebar.module.css";
+import classes from "./Sidebar.module.scss";
 import {Link} from "react-scroll";
 
 export const Sidebar = () => {
@@ -8,7 +8,7 @@ export const Sidebar = () => {
             <div className={classes.container}>
                 <div className={classes.photoContainer}>
                     <img className={classes.photo} src={'https://pixy.org/src/95/thumbs350/954766.jpg'}/>
-                    <h1>Mishka</h1>
+                    <h1 className={classes.photoText}>Mishka</h1>
                 </div>
                 <div className={classes.navContainer}>
                     <ul>

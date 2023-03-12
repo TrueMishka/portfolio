@@ -1,6 +1,5 @@
 import React from 'react';
-import classes from "./Main.module.css";
-import commonStyle from '../../common/style/CommonStyle.module.css'
+import classes from "./Main.module.scss";
 import {Element} from "react-scroll";
 
 export const Main = () => {
@@ -12,7 +11,7 @@ export const Main = () => {
                         <p className={classes.textTop}>Welcome</p>
                         <h2 className={classes.textMiddle}>I'm Front-End Developer</h2>
                         <p className={classes.textBottom}>from Mordor</p>
-                        <a className={commonStyle.buttonLink} href={'#'}>Hire me</a>
+                        <a className={classes.buttonLink} href={'#'}>Hire me</a>
                     </div>
                 </div>
             </section>

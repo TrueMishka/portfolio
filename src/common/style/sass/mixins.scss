@@ -1,0 +1,22 @@
+@import "./variables";
+
+@mixin btn() {
+  text-decoration: none;
+  width: 60px;
+  height: 25px;
+  border: 2px solid $primaryColor;
+  border-radius: 25px;
+  font-weight: 500;
+  padding: 0.8rem 2rem;
+  transition: all .5s ease;
+  color: $primaryColor;
+  &:hover {
+    background-color: $primaryColor;
+    color: white;
+  }
+}
+
+@mixin textDecoration() {
+  text-decoration: none;
+  color: $primaryColor;
+}

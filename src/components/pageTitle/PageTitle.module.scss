@@ -1,0 +1,42 @@
+@import "../../common/style/sass/variables";
+
+.titleContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+
+  h2 {
+    margin: 0 auto;
+    padding: 10px;
+    opacity: 1;
+    position: absolute;
+    font-size: calc(1.95rem + 6.4vw);
+    color: $textSecondColor;
+  }
+
+  p {
+    z-index: 1;
+    color: $textColor;
+    font-size: 2.25rem;
+    margin: 50px;
+    line-height: 1.3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    background: $primaryColor;
+    width: 80px;
+    height: 2px;
+    left: 50%;
+    bottom: 40px;
+    transform: translate(-50%, 50%);
+  }
+}

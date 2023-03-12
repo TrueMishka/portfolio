@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from "./Skill.module.css";
+import classes from "./Skill.module.scss";
 
 type PropsType = {
     title: string

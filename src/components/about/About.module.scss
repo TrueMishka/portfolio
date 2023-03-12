@@ -1,0 +1,71 @@
+@import 'src/common/style/sass/variables';
+@import 'src/common/style/sass/mixins';
+
+.wrapper {
+  position: relative;
+  background-color: $bgColor;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding-left: 260px;
+
+  .container {
+    margin: 50px;
+    width: 100%;
+
+    .content {
+      display: flex;
+      align-items: flex-start;
+      text-align: left;
+      gap: 50px;
+      color: $textColor;
+      @media (max-width: 1000px) {
+        flex-direction: column;
+      }
+
+      .information {
+        span {
+          @include textDecoration()
+        }
+
+        p {
+          color: $parTextColor;
+        }
+      }
+
+      .shortInformation {
+        width: 100%;
+        font-size: 18px;
+        text-align: left;
+
+        ul {
+          padding-left: 0;
+          list-style: none;
+
+          li {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid $bgSecondColor;
+
+            a {
+              @include textDecoration()
+            }
+          }
+
+          li:last-child {
+            border-bottom: none;
+          }
+        }
+
+        .btn {
+          @include btn()
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    transition: padding-left 1s;
+    padding-left: 0;
+  }
+}

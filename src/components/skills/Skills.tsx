@@ -1,14 +1,11 @@
 import React from 'react';
-import classes from "./Skills.module.css";
-import commonStyle from '../../common/style/CommonStyle.module.css'
+import classes from "./Skills.module.scss";
 import {PageTitle} from "../pageTitle/PageTitle";
 import {Element} from "react-scroll";
 import {Skill} from "./skill/Skill";
 import { FaHtml5 } from 'react-icons/fa'
 import { TbNumber1 } from 'react-icons/tb'
 import { SiCss3, SiTypescript, SiReact, SiRedux } from 'react-icons/si'
-
-
 
 export const Skills = () => {
     return (
