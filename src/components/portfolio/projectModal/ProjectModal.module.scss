@@ -1,0 +1,107 @@
+@import 'src/common/style/sass/variables';
+@import 'src/common/style/sass/mixins';
+
+.modalProjectWrapper {
+  position: fixed;
+  right: 0;
+  top: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: block;
+  z-index: 100;
+
+  .modalProjectContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: $bgColor;
+
+    .modalProject {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+      margin: 50px;
+      background-color: $bgSecondColor;
+      border-radius: 10px;
+      max-width: 1000px;
+      @media (max-width: 500px) {
+        margin: 15px;
+      }
+
+      .modalBody {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+
+        .modalTitle {
+          margin: 0 0 auto;
+          color: $textColor;
+          padding-bottom: 20px;
+        }
+
+        .modalInfo {
+          display: flex;
+          gap: 50px;
+          flex-direction: row;
+          justify-content: space-between;
+          @media (max-width: 1100px) {
+            align-items: center;
+            flex-direction: column;
+          }
+
+          .modalImg {
+            opacity: 0.8;
+            transition: opacity 0.3s;
+            width: 600px;
+            height: 350px;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            @media (max-width: 1100px) {
+              width: 350px;
+              height: 300px;
+            }
+            @media (max-width: 500px) {
+              width: 100%;
+            }
+          }
+
+          .modalDescription {
+            width: 100%;
+            font-size: 18px;
+            text-align: left;
+
+            ul {
+              padding-left: 0;
+              list-style: none;
+
+              li {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-bottom: 2px solid $textSecondColor;
+                color: $parTextColor;
+
+                span {
+                  color: $textColor;
+                  font-weight: bold;
+                }
+
+                a {
+                  @include textDecoration()
+                }
+              }
+
+              li:last-child {
+                border-bottom: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

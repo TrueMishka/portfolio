@@ -1,0 +1,40 @@
+@import 'src/common/style/sass/variables';
+@import 'src/common/style/sass/mixins';
+
+.wrapper {
+  min-height: 100vh;
+  background-color: $bgColor;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding-left: 260px;
+
+  .container {
+    margin: 50px;
+    width: 100%;
+
+    .contentWrapper {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      flex: 0 0 auto;
+      width: 91.66666667%;
+
+      .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        @media (max-width: 1000px) {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    transition: padding-left 1s;
+    padding-left: 0;
+  }
+}
