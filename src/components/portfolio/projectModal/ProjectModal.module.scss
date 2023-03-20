@@ -8,7 +8,7 @@
   min-width: 100vw;
   min-height: 100vh;
   display: block;
-  z-index: 100;
+  z-index: 10;
 
   .modalProjectContainer {
     display: flex;
@@ -37,10 +37,31 @@
         height: 100%;
         text-align: center;
 
-        .modalTitle {
-          margin: 0 0 auto;
-          color: $textColor;
-          padding-bottom: 20px;
+        .bodyTop {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .btn {
+            cursor: pointer;
+            border: none;
+            border-radius: 50%;
+            color: $textColor;
+            padding: 2px;
+            height: 30px;
+            width: 30px;
+            background-color: $bgSecondColor;
+            transition: background-color 0.5s;
+            &:hover {
+              background-color: $bgColor;
+              transition: background-color 0.5s;
+            }
+          }
+
+          .modalTitle {
+            margin: 0 0 auto;
+            color: $textColor;
+            padding-bottom: 20px;
+          }
         }
 
         .modalInfo {

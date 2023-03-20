@@ -23,6 +23,9 @@ export const Sidebar = () => {
                 <div className={classes.footerContainer}>
                     Some icon (linkedIn Telegram etc.)
                 </div>
+                {/*<div className={classes.btmHamburger}>
+                    <button>btn</button>
+                </div>*/}
             </div>
         </div>
     );

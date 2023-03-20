@@ -2,6 +2,11 @@ import React from 'react';
 import classes from "./About.module.scss";
 import {Element} from "react-scroll";
 import {PageTitle} from "../pageTitle/PageTitle";
+import {MdHtml, MdCss} from "react-icons/md";
+import {FaReact, FaSass} from 'react-icons/fa';
+import {SiRedux} from 'react-icons/si';
+import {TbBrandTypescript} from 'react-icons/tb';
+
 
 export const About = () => {
     return (
@@ -24,6 +29,17 @@ export const About = () => {
                                 Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim
                                 iriure.
                             </p>
+                            <div className={classes.techBlock}>
+                                <h3 className={classes.techTitle}>Tech Stack</h3>
+                                <div className={classes.tech}>
+                                    <div className={classes.item}><MdHtml size={60}/></div>
+                                    <div className={classes.item}><MdCss size={60}/></div>
+                                    <div className={classes.item}><FaSass size={60}/></div>
+                                    <div className={classes.item}><FaReact size={60}/></div>
+                                    <div className={classes.item}><SiRedux size={60}/></div>
+                                    <div className={classes.item}><TbBrandTypescript size={60}/></div>
+                                </div>
+                            </div>
                         </div>
                         <div className={classes.shortInformation}>
                             <ul>
