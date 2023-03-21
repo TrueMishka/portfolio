@@ -19,9 +19,9 @@ export const Sidebar = () => {
                         <li><Link activeClass={classes.active} to={'Contact'} spy={true} smooth={true}>Contact</Link></li>
                     </ul>
                 </div>
-                <div className={classes.footerContainer}>
+                {/*<div className={classes.footerContainer}>
                     Some icon (linkedIn Telegram etc.)
-                </div>
+                </div>*/}
                 {/*<div className={classes.btmHamburger}>
                     <button>btn</button>
                 </div>*/}
