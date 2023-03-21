@@ -21,7 +21,7 @@ export const Project: React.FC<PropsType> = ({project}) => {
 
         const body = document.querySelector('body');
         if (body) {
-            //body.style.overflow = 'hidden'
+            body.style.overflow = 'hidden'
         }
     }
 
@@ -30,7 +30,7 @@ export const Project: React.FC<PropsType> = ({project}) => {
 
         const body = document.querySelector('body');
         if (body) {
-            //body.style.overflow = 'unset'
+            body.style.overflow = 'unset'
         }
     }
 

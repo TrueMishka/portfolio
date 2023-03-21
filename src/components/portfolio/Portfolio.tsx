@@ -53,7 +53,7 @@ export const Portfolio = () => {
         <Element name={'Portfolio'}>
             <section className={classes.wrapper}>
                 <div className={classes.container}>
-                    <PageTitle backTitle={'PORTFOLIO'} frontTitle={'My project'}/>
+                    <PageTitle backTitle={'PORTFOLIO'} frontTitle={'My projects'}/>
                     <div className={classes.contentWrapper}>
                         <div className={classes.content}>
                             {projects.map((proj) => {

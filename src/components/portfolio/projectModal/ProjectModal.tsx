@@ -19,7 +19,6 @@ export const ProjectModal:React.FC<PropsType> = ({project, onCloseCallback, styl
                             <div className={classes.bodyTop}>
                                 <h2 className={classes.modalTitle}>{project.title}</h2>
                                 <RxCross2 className={classes.btn} onClick={onCloseCallback}/>
-                                {/*<button className={classes.btn} onClick={onCloseCallback}><RxCross2 size={20}/></button>*/}
                             </div>
                             <div className={classes.modalInfo}>
                                 <div style={styleImg} className={classes.modalImg}></div>

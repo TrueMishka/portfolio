@@ -12,7 +12,7 @@ export const Skills = () => {
         <Element name={'Skills'}>
             <section className={classes.wrapper}>
                 <div className={classes.container}>
-                    <PageTitle backTitle={'WHAT I KNOW'} frontTitle={'My skills'}/>
+                    <PageTitle backTitle={'WHAT I KNOW'} frontTitle={'My skills'} secondColor={true}/>
                     <div className={classes.contentWrapper}>
                         <div className={classes.content}>
                             <Skill

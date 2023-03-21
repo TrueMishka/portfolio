@@ -16,8 +16,7 @@ export const Sidebar = () => {
                         <li><Link activeClass={classes.active} to={'AboutMe'} spy={true} smooth={true}>About Me</Link></li>
                         <li><Link activeClass={classes.active} to={'Skills'} spy={true} smooth={true}>What I Know</Link></li>
                         <li><Link activeClass={classes.active} to={'Portfolio'} spy={true} smooth={true}>Portfolio</Link></li>
-                        <li>Resume</li>
-                        <li>Contact</li>
+                        <li><Link activeClass={classes.active} to={'Contact'} spy={true} smooth={true}>Contact</Link></li>
                     </ul>
                 </div>
                 <div className={classes.footerContainer}>

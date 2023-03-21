@@ -7,6 +7,7 @@
   background-color: $bgSecondColor;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -15,7 +16,8 @@
   .container {
     margin-right: auto;
     margin-left: auto;
-    width: 100%;
+    //width: 100%;
+    height: 100%;
 
     .content {
       display: flex;
@@ -24,18 +26,24 @@
       color: $textColor;
 
       .textTop {
-        margin: 0;
+        margin: 0 0 auto;
         padding-bottom: 20px;
         font-size: 35px;
       }
 
       .textMiddle {
-        margin: 0;
+        margin: 0 0 auto;
         font-size: 60px;
+
+        /*overflow: hidden;
+        white-space: nowrap;
+        letter-spacing: .15em;
+        animation:
+                typedText 3.5s steps(40, jump-start)*/
       }
 
       .textBottom {
-        margin: 0;
+        margin: 0 0 auto;
         font-size: 21px;
         padding-top: 20px;
         padding-bottom: 50px;
@@ -44,6 +52,37 @@
       .buttonLink {
         @include btn()
       }
+
+      @media (max-width: 415px) {
+        .textTop {
+          font-size: 30px;
+        }
+        .textMiddle {
+          font-size: 40px;
+        }
+        .textBottom {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 50px;
+    color: $textColor;
+    cursor: pointer;
+    transition: color 0.5s;
+
+    &:hover {
+      color: $primaryColor;
+    }
+
+    .bottomAnimate {
+      animation-name: bounce;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
     }
   }
 
@@ -53,5 +92,38 @@
   }
 }
 
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes typedText {
+  from {
+    width: 0
+  }
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+  50% {
+    border-color: orange
+  }
+}
 
 

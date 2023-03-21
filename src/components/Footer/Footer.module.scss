@@ -1,0 +1,26 @@
+@import 'src/common/style/sass/variables';
+@import 'src/common/style/sass/mixins';
+
+.wrapper {
+  min-height: 20vh;
+  background-color: $bgColor;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 260px;
+
+  h3 {
+    padding-left: 25px;
+    color: $textColor;
+
+    .styleText {
+      color: $primaryColor;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    transition: padding-left 1s;
+    padding-left: 0;
+  }
+}

@@ -2,14 +2,14 @@
 
 @mixin btn() {
   text-decoration: none;
-  width: 60px;
+  min-width: 60px;
   height: 25px;
   border: 2px solid $primaryColor;
   border-radius: 25px;
   font-weight: 500;
   padding: 0.8rem 2rem;
-  transition: all .5s ease;
   color: $primaryColor;
+  transition: all .5s ease;
   &:hover {
     background-color: $primaryColor;
     color: white;
@@ -19,4 +19,14 @@
 @mixin textDecoration() {
   text-decoration: none;
   color: $primaryColor;
+}
+
+@mixin inputDecoration() {
+  padding: 13px 15px;
+  border: 1px solid $inputColor;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  background-color: $inputColor;
+  color: $textColor;
 }

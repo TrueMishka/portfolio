@@ -5,6 +5,8 @@ import {Sidebar} from "./components/sidebar/Sidebar";
 import {About} from "./components/about/About";
 import {Skills} from "./components/skills/Skills";
 import {Portfolio} from "./components/portfolio/Portfolio";
+import {Contact} from "./components/contact/Contact";
+import {Footer} from "./components/Footer/Footer";
 
 // ref
 // https://themeforest.net/item/simone-personal-portfolio-react-template/42757507
@@ -19,6 +21,8 @@ function App() {
             <About/>
             <Skills/>
             <Portfolio/>
+            <Contact/>
+            <Footer/>
         </div>
     );
 }
