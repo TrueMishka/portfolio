@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import classes from "./Sidebar.module.scss";
 import {Link} from "react-scroll";
+import avatarImg from './../../assets/img/avatar.png'
 import {RxHamburgerMenu, RxCross2} from 'react-icons/rx'
 import {TbBrandGithub, TbBrandTelegram} from 'react-icons/tb'
 import {CiLinkedin} from 'react-icons/ci'
@@ -44,7 +45,7 @@ export const Sidebar:React.FC<PropsType> = ({changeTheme, theme}) => {
         <div className={classes.wrapper}>
             <div className={classes.container}>
                 <div className={classes.photoContainer}>
-                    <img className={classes.photo} src={'https://pixy.org/src/95/thumbs350/954766.jpg'}/>
+                    <img className={classes.photo} src={avatarImg}/>
                     <h1 className={classes.photoText}>Mishka</h1>
                 </div>
                 <div className={classes.navContainer}>
