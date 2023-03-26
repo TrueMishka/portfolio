@@ -17,6 +17,18 @@ body::-webkit-scrollbar {
   height: 0;
 }
 
+:root {
+  --text-color: #fff;
+  --text-second-color: #282d31;
+  --text-third-color: #3b4046;
+  --par-text-color: #888c8f;
+  --input-color: #232a32;
+  --primary-color: #20c997;
+  --bg-color: #212429;
+  --bg-second-color: #353a40;
+  --bg-dark-color: #111419;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

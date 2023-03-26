@@ -23,6 +23,7 @@
     scale: 1;
     opacity: 1;
     transition: opacity 1s;
+    @include borderShadow();
 
 
     &::before {

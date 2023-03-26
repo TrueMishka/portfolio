@@ -3,7 +3,11 @@ import classes from "./Main.module.scss";
 import {Element, Link} from "react-scroll";
 import {MdKeyboardArrowDown} from 'react-icons/md'
 
-export const Main = () => {
+type PropsType = {
+    theme: string
+}
+
+export const Main:React.FC<PropsType> = ({theme}) => {
     return (
         <Element name={'Home'}>
             <section className={classes.wrapper}>

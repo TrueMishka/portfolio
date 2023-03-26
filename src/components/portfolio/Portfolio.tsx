@@ -47,13 +47,16 @@ const projects: ProjectType[] = [
     }
 ]
 
+type PropsType = {
+    theme: string
+}
 
-export const Portfolio = () => {
+export const Portfolio:React.FC<PropsType> = ({theme}) => {
     return (
         <Element name={'Portfolio'}>
             <section className={classes.wrapper}>
                 <div className={classes.container}>
-                    <PageTitle backTitle={'PORTFOLIO'} frontTitle={'My projects'}/>
+                    <PageTitle backTitle={'PORTFOLIO'} frontTitle={'My projects'} theme={theme}/>
                     <div className={classes.contentWrapper}>
                         <div className={classes.content}>
                             {projects.map((proj) => {

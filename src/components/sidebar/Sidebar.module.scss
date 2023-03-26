@@ -87,13 +87,23 @@
       }
     }
 
+    .themeChanger {
+      color: #fff;
+      &:hover {
+        color: $primaryColor;
+      }
+      @media (max-width: 1000px) {
+        position: absolute;
+        right: 80px;
+      }
+    }
+
     .footerContainer {
       display: flex;
       gap: 15px;
-      color: $textColor;
 
       .footerIcon {
-        color: $textColor;
+        color: #fff;
         &:hover {
           color: $primaryColor;
         }
@@ -108,8 +118,7 @@
       display: none;
 
       @media (max-width: 1000px) {
-        display: flex;
-
+        display: block;
       }
     }
 
@@ -127,6 +136,7 @@
       ul {
         list-style: none;
         padding: 0;
+        color: $textColor;
 
         li {
           cursor: pointer;

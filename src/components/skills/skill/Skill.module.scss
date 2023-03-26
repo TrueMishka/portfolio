@@ -15,6 +15,7 @@
     background-color: $bgColor;
     border-radius: 10px;
     position: absolute;
+    @include borderShadow();
 
     .icon {
       height: 100%;

@@ -7,13 +7,16 @@ import {FaReact, FaSass} from 'react-icons/fa';
 import {SiRedux} from 'react-icons/si';
 import {TbBrandTypescript} from 'react-icons/tb';
 
+type PropsType = {
+    theme: string
+}
 
-export const About = () => {
+export const About:React.FC<PropsType> = ({theme}) => {
     return (
         <Element name={'AboutMe'}>
             <section className={classes.wrapper}>
                 <div className={classes.container}>
-                    <PageTitle backTitle={'ABOUT ME'} frontTitle={'Know Me More'}/>
+                    <PageTitle backTitle={'ABOUT ME'} frontTitle={'Know Me More'} theme={theme}/>
                     <div className={classes.content}>
                         <div className={classes.information}>
                             <h2>I'm <span>Misha Pashuto</span>, a front-end
