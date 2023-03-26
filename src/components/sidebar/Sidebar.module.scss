@@ -88,6 +88,7 @@
     }
 
     .themeChanger {
+      cursor: pointer;
       color: #fff;
       &:hover {
         color: $primaryColor;
@@ -99,6 +100,7 @@
     }
 
     .footerContainer {
+      cursor: pointer;
       display: flex;
       gap: 15px;
 
