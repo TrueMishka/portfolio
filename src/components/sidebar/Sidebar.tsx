@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import classes from "./Sidebar.module.scss";
 import {Link} from "react-scroll";
-import {RxHamburgerMenu} from 'react-icons/rx'
+import {RxHamburgerMenu, RxCross2} from 'react-icons/rx'
 import {TbBrandGithub, TbBrandTelegram} from 'react-icons/tb'
 import {CiLinkedin} from 'react-icons/ci'
 
@@ -45,7 +45,9 @@ export const Sidebar = () => {
                     <CiLinkedin className={classes.footerIcon} size={25}/>
                 </div>
                 <div className={classes.btmHamburger}>
-                    <RxHamburgerMenu size={30} onClick={hamburgerMenuHandler}/>
+                    {displayHamburgerMenu
+                        ? <RxCross2 size={30} onClick={hamburgerMenuHandler}/>
+                        : <RxHamburgerMenu size={30} onClick={hamburgerMenuHandler}/>}
                     {displayHamburgerMenu && <div className={classes.hamburgerMenu}>
                         {navMenu}
                     </div>}
