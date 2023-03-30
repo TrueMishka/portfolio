@@ -38,22 +38,26 @@
       border-radius: 10px;
       opacity: 0.2;
     }
+
     &:hover {
       scale: 1.01;
       /*background-color: rgba(0, 0, 0, 0.2);*/
       opacity: 0.2;
       transition: opacity 0.4s;
+
       .title {
         display: block;
-        color: rgba(255, 255, 255, 1);
+        //color: rgba(255, 255, 255, 1);
+        color: $textColor;
       }
     }
-
-    .title {
-      display: none;
-      position: relative;
-      color: $textColor;
-      font-size: 36px;
-    }
   }
+
+  .title {
+    display: none;
+    position: relative;
+    color: $textColor;
+    font-size: 36px;
+  }
+
 }
