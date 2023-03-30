@@ -6,11 +6,13 @@
   justify-content: center;
   text-decoration: none;
   min-width: 60px;
-  height: 25px;
+  height: 26px;
   border: 2px solid $primaryColor;
-  border-radius: 25px;
+  border-radius: 20px;
   font-weight: 500;
-  padding: 0.8rem 2rem;
+  padding: 10px 2rem;
+  font-size: 18px;
+  //padding: 0.8rem 2rem;
   color: $primaryColor;
   transition: all .5s ease;
   &:hover {
