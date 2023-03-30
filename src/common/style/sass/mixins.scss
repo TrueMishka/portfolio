@@ -1,6 +1,9 @@
 @import "./variables";
 
 @mixin btn() {
+  display: flex;
+  align-self: center;
+  justify-content: center;
   text-decoration: none;
   min-width: 60px;
   height: 25px;
