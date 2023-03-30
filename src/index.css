@@ -1,55 +1,68 @@
 body {
-  overflow-y: scroll;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
 
-  margin: 0;
-  font-weight: 600;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+    width: 0;
+    height: 0;
 }
 
 :root {
-  --text-color: #fff;
-  --text-second-color: #282d31;
-  --text-third-color: #3b4046;
-  --par-text-color: #888c8f;
-  --input-color: #232a32;
-  --primary-color: #20c997;
-  --bg-color: #212429;
-  --bg-second-color: #353a40;
-  --bg-dark-color: #111419;
+    --text-color: #fff;
+    --text-second-color: #282d31;
+    --text-third-color: #3b4046;
+    --par-text-color: #888c8f;
+    --input-color: #232a32;
+    --primary-color: #20c997;
+    --bg-color: #212429;
+    --bg-second-color: #353a40;
+    --bg-dark-color: #111419;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    border: 0;
+    -webkit-text-fill-color: var(--text-color);
+    -webkit-box-shadow: 0 0 0 1000px var(--input-color) inset;
+    transition: background-color 5000s ease-out 2s;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 .modal-enter {
-  opacity: 0;
-  transform: scale(1);
-  /*transform: scale(0.9);*/
+    opacity: 0;
+    transform: scale(1);
+    /*transform: scale(0.9);*/
 }
+
 .modal-enter-active {
-  opacity: 1;
-  transform: translateX(0);
-  transition: opacity 300ms, transform 300ms;
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
 }
+
 .modal-exit {
-  opacity: 1;
+    opacity: 1;
 }
+
 .modal-exit-active {
-  opacity: 0;
-  transform: scale(1);
-  /*transform: scale(0.9);*/
-  transition: opacity 300ms, transform 300ms;
+    opacity: 0;
+    transform: scale(1);
+    /*transform: scale(0.9);*/
+    transition: opacity 300ms, transform 300ms;
 }
