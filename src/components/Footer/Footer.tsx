@@ -8,7 +8,7 @@ type PropsType = {
 export const Footer:React.FC<PropsType> = ({theme}) => {
     return (
         <div className={classes.wrapper}>
-            <h3>Copyright © 2023 <span className={classes.styleText}>Mishka.</span> All Rights Reserved.</h3>
+            <h3>Copyright © 2023 <span className={classes.styleText}>Mishka</span></h3>
         </div>
     );
 };

@@ -57,10 +57,10 @@ export const Sidebar:React.FC<PropsType> = ({changeTheme, theme}) => {
                         : <MdOutlineModeNight onClick={changeTheme} size={30}/>
                     }
                 </div>
-                <div className={classes.footerContainer}>
-                    <TbBrandGithub className={classes.footerIcon} size={25}/>
-                    <TbBrandTelegram className={classes.footerIcon} size={25}/>
-                    <CiLinkedin className={classes.footerIcon} size={25}/>
+                <div className={classes.iconContainer}>
+                    <TbBrandGithub className={classes.icon}/>
+                    <TbBrandTelegram className={classes.icon}/>
+                    <CiLinkedin className={classes.icon}/>
                 </div>
                 <div className={classes.btmHamburger}>
                     {displayHamburgerMenu

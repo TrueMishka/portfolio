@@ -95,16 +95,18 @@
       }
       @media (max-width: 1000px) {
         position: absolute;
-        right: 80px;
+        right: 200px;
       }
     }
 
-    .footerContainer {
+    .iconContainer {
       cursor: pointer;
       display: flex;
       gap: 15px;
 
-      .footerIcon {
+      .icon {
+        width: 25px;
+        height: 25px;
         color: #fff;
         &:hover {
           color: $primaryColor;
@@ -112,7 +114,14 @@
       }
 
       @media (max-width: 1000px) {
-        display: none;
+        //display: none;
+        position: absolute;
+        right: 90px;
+        opacity: 0.6;
+        .icon {
+          width: 18px;
+          height: 18px;
+        }
       }
     }
 

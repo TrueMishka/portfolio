@@ -28,6 +28,8 @@
       .photoContainer {
         display: none;
         margin-bottom: 30px;
+        border-radius: 100%;
+        @include borderShadow();
 
         .photo {
           display: flex;
@@ -37,6 +39,7 @@
           border: 20px solid $bgDarkColor;
           background: $bgDarkColor;
           object-fit: contain;
+
           @media (max-width: 415px) {
             width: 200px;
             height: 200px;

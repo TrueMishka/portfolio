@@ -32,17 +32,17 @@ export const About:React.FC<PropsType> = ({theme}) => {
                                 Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim
                                 iriure.
                             </p>
-                            <div className={classes.techBlock}>
-                                <h3 className={classes.techTitle}>Tech Stack</h3>
-                                <div className={classes.tech}>
-                                    <div className={classes.item}><MdHtml size={60}/></div>
-                                    <div className={classes.item}><MdCss size={60}/></div>
-                                    <div className={classes.item}><FaSass size={60}/></div>
-                                    <div className={classes.item}><FaReact size={60}/></div>
-                                    <div className={classes.item}><SiRedux size={60}/></div>
-                                    <div className={classes.item}><TbBrandTypescript size={60}/></div>
-                                </div>
-                            </div>
+                            {/*<div className={classes.techBlock}>*/}
+                            {/*    <h3 className={classes.techTitle}>Tech Stack</h3>*/}
+                            {/*    <div className={classes.tech}>*/}
+                            {/*        <div className={classes.item}><MdHtml size={60}/></div>*/}
+                            {/*        <div className={classes.item}><MdCss size={60}/></div>*/}
+                            {/*        <div className={classes.item}><FaSass size={60}/></div>*/}
+                            {/*        <div className={classes.item}><FaReact size={60}/></div>*/}
+                            {/*        <div className={classes.item}><SiRedux size={60}/></div>*/}
+                            {/*        <div className={classes.item}><TbBrandTypescript size={60}/></div>*/}
+                            {/*    </div>*/}
+                            {/*</div>*/}
                         </div>
                         <div className={classes.shortInformation}>
                             <ul>

@@ -6,12 +6,11 @@
   background-color: $bgColor;
   overflow: hidden;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   padding-left: 260px;
 
   h3 {
-    padding-left: 25px;
     color: $textColor;
 
     .styleText {
@@ -20,7 +19,7 @@
   }
 
   @media (max-width: 1000px) {
-    transition: padding-left 1s;
+    transition: all 1s;
     padding-left: 0;
   }
 }
